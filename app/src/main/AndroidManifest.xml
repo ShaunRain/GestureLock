@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shaunrain.gesturelock">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true">
+        <activity
+            android:name=".ui.CrystalActivity"
+            android:theme="@style/TransparentStyleBottom" />
+        <activity
+            android:name=".ui.LockMainActivity"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:theme="@style/TransparentStyleBottom" />
+
+        <service android:name=".service.RunningTaskService" />
+
+        <activity
+            android:name=".ui.LockSettingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.HideMediaActivity"
+            android:label="@string/hide_media"
+            android:theme="@style/CustomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.HidePickActivity"
+            android:label="@string/title_activity_hide_pick"
+            android:theme="@style/CustomeTheme"></activity>
+    </application>
+
+</manifest>

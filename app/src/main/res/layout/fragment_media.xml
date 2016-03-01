@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MediaFragment">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/lockimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:rv_centered="true"
+        app:rv_color="@color/little_gray"
+        app:rv_rippleDuration="100"
+        app:rv_zoom="true"
+        app:rv_zoomScale="1.1">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:clickable="true">
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/lock_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="图片"
+                android:textColor="@color/more_gray"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/lockvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:rv_centered="true"
+        app:rv_color="@color/little_gray"
+        app:rv_rippleDuration="100"
+        app:rv_zoom="true"
+        app:rv_zoomScale="1.1">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:clickable="true">
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/lock_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="视频"
+                android:textColor="@color/more_gray"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/lockmusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:rv_centered="true"
+        app:rv_color="@color/little_gray"
+        app:rv_rippleDuration="100"
+        app:rv_zoom="true"
+        app:rv_zoomScale="1.1">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:clickable="true">
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/lock_music" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="音频"
+                android:textColor="@color/more_gray"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

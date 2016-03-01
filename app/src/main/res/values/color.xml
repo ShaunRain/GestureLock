@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_normal">#99c27ac2</color>
+    <color name="color_press">#99569fdc</color>
+    <color name="color_error">#99ff8f40</color>
+    <color name="color_disable">#e8eaed</color>
+    <color name="transparent">#00000000</color>
+    <color name="material_blue_500">#009688</color>
+    <color name="material_blue_700">#00796B</color>
+    <color name="material_green_A200">#FD87A9</color>
+    <color name="little_gray">#E0E0E0</color>
+    <color name="more_gray">#686767</color>
+</resources>
